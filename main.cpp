@@ -352,7 +352,7 @@ int main() {
     //cout<<"----------------------------------------------------------------------"<<endl;
     //cout<<"\nAverage of "<< tests <<"\tLayers = "<<(double)tot_layers/(double)tests<<endl<<endl<<endl;
     std::cout<<"Points Size\t\tInitial configurations"<<endl;
-    std::cout<<"\t1\t2\t3\t4\t5"<<endl;
+    std::cout<<"\t1\t2\t3\t4\t5\t6"<<endl;
     for(int z = 0; z < 12; z++) {
         std::cout<<x[z];
         for (int y = 1; y < 7; y++) {
