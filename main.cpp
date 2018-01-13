@@ -121,7 +121,7 @@ int* findExtremes(Point* points, int n){
     return extreme;
 }
 int main() {
-    /*int count = 0, tot_layers = 0, totalpoints = 0, n=0, tests = 0, space = 1;
+    int count = 0, tot_layers = 0, totalpoints = 0, n=0, tests = 0, space = 1;
     std::cout<<"----------------------------------------------------------------------"<<endl<<endl;
     std::cout << "\tLAYER COMPUTATION " << std::endl<<std::endl;
     std::cout<<"----------------------------------------------------------------------"<<endl<<endl;
@@ -137,7 +137,7 @@ int main() {
     std::cout << "6. Rectangle ((3/2)(sqrt(n)) * (sqrt(n))"<<endl;
     std::cout << "Choose Option (1, 2, 3, 4, 5 or 6): ";
     std::cin >> space;
-    if(space < 1 || space > 5){
+    if(space < 1 || space > 6){
         std::cout<<"Wrong choice"<<endl;
         goto again;
     }
@@ -147,14 +147,14 @@ int main() {
     std::cout<<"\nTotal number of points: "<<totalpoints<<endl<<endl;
     std::cout <<"Tests \t\t\t layers (h)" << endl;
     std::cout<<"----------------------------------------------------------------------"<<endl;
-*/
 
+/*
     int x[] = {100,500,1000,2000,3000,4000,5000,6000,7000,8000,9000,10000};
     double result[6][12];
     for(int y = 1; y < 7; y++){
         for(int z = 0; z < 12; z++){
             int count = 0, tot_layers = 0, totalpoints = x[z], n=0, tests = 20, space = y;
-
+*/
             srand(time(0));
 
 
@@ -338,20 +338,20 @@ int main() {
                     layers++;
                     h++;
                 }
-                //std::cout<<"Test "<<count + 1<<"\t\tNumber of Layers = "<<layers<<endl;
+                std::cout<<"Test "<<count + 1<<"\t\tNumber of Layers = "<<layers<<endl;
                 tot_layers += layers;
                 count++;
             }
-            result[y][z] = (double)tot_layers/(double)tests;
-        }
+//            result[y][z] = (double)tot_layers/(double)tests;
+//        }
 
-    }
+//    }
 
 
 
-    //cout<<"----------------------------------------------------------------------"<<endl;
-    //cout<<"\nAverage of "<< tests <<"\tLayers = "<<(double)tot_layers/(double)tests<<endl<<endl<<endl;
-    std::cout<<"Points Size\t\tInitial configurations"<<endl;
+    cout<<"----------------------------------------------------------------------"<<endl;
+    cout<<"\nAverage of "<< tests <<"\tLayers = "<<(double)tot_layers/(double)tests<<endl<<endl<<endl;
+/*    std::cout<<"Points Size\t\tInitial configurations"<<endl;
     std::cout<<"\t1\t2\t3\t4\t5\t6"<<endl;
     for(int z = 0; z < 12; z++) {
         std::cout<<x[z];
@@ -359,6 +359,6 @@ int main() {
             std::cout<<"\t"<<result[y][z];
         }
         std::cout<<endl;
-    }
+    }*/
     return 0;
 }
