@@ -12,10 +12,6 @@ struct Point
     int x, y;
 };
 
-// A global point needed for  sorting points with reference
-// to  the first point Used in compare function of qsort()
-Point p0;
-
 //generate random coordinate
 Point generateCoord(int range_x, int range_y){
     Point a;
